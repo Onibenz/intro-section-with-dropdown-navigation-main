@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/******** My Style Starts Here **********/
+
+body {
+    font-family: 'Epilogue', sans-serif;
+}
+
+header {
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.open-menu {
+    display: none;
+    background-color: hsl(0, 0%, 98%);
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 63vw;
+    height:  100vh;
+    color: hsl(0, 0%, 41%); 
+    font-size: 15px; 
+    font-weight: 500; 
+ }
+
+ .nav-overlay {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+} 
+
+ header nav ul {
+    /* border: 1px solid; */
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 15px;
+    margin-top: 25%;
+ }
+
+ nav ul li {
+    /* border: 1px solid; */
+    padding: 10px;
+    cursor: pointer;
+ }
+
+ nav details summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+ }
+
+ nav ul p {
+    /* background-color: rgb(21, 122, 210); */
+    display: flex;
+    gap: 5px;
+    padding-block: 5px;
+    margin-left: 20px;  
+ }
+
+ .arrow-down {
+    display: block;
+ }
+
+ .arrow-up {
+    display: none;
+ }
+
+ nav div {
+    text-align: center;
+    margin-top: 20px;
+ }
+
+ .login {
+    cursor: pointer;
+ }
+
+ nav div button {
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 7px;
+    padding-inline: 50px;
+    background-color: inherit;
+    color: hsl(0, 0%, 41%); 
+    cursor: pointer;  
+ }
+
+ .menu-icon {
+    cursor: pointer;
+ }
+
+ .close-menu {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    cursor: pointer;
+ }
+
+ main {
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 20px;
+    text-align: center;
+ }
+
+ .mobile-image {
+   display: block;
+    object-fit: cover;
+ }
+
+ .desktop-image {
+   display: none;
+ }
+
+ main h1 {
+    font-weight: 700;
+    padding: 10px;
+ }
+
+ main p {
+    line-height: 30px;
+    color: hsl(0, 0%, 8%);
+    font-weight: 500;
+ }
+
+ main article button {
+    border: 0px;
+    border-radius: 15px;
+    color: hsl(0, 0%, 98%);
+    background-color: black;
+    width: 8rem;
+    height: 7vh;
+    margin: 20px;
+ }
+
+ article button:hover {
+    background-color:hsl(0, 0%, 41%);
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+ }
+
+ footer {
+    /* border: 1px solid; */
+    display: flex;
+    align-content: center;
+    justify-content: space-between; 
+    width: 100vw;
+    padding-inline: 30px;
+ }
+
+ footer img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+ }
+
+ @media (min-width: 376px) {
+
+   body {
+      background-color: hsl(0, 0%, 98%);
+      max-width: 1400px;
+   }
+
+   .menu-icon, .close-menu {
+      display: none;
+   }
+
+   .desktop-nav {
+      /* border: 1px solid; */
+      display: flex;
+      width: 85vw;
+      position: inherit;
+      height: inherit;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   .desktop-nav ul {
+      /* border: 1px solid; */
+      flex-direction: row;
+      margin: 0%;
+      gap: 30px;
+   }
+
+   nav div {
+      /* border: 1px solid; */
+      margin-top: 0px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+   }
+   
+   nav div button {
+      margin: 0%;
+      padding-inline: 20px;
+      border: 2px solid ;
+   }
+
+   ul li span {
+      position: absolute;
+      background-color: white;
+      border-radius: 10px;
+   }
+
+   main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto 50px;
+      margin-inline: 7rem;
+      text-align: left;
+      padding: 20px;
+   }
+   
+   .mobile-image {
+      display: none;
+   }
+  picture {
+   height: 100%;
+   width: 100%;
+  } 
+   .desktop-image {
+     display: block;
+     grid-column: 2/3;
+     grid-row:-3/-1;
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+   }
+
+
+   main h1 {
+      font-size: 3rem;
+      padding: 0%;
+      line-height: 40px;
+      padding-block: 3rem;
+   }
+   
+   main h1 span {
+      margin-right: 20rem;
+   }
+
+   main article p {
+      font-size: 18px;
+      margin-right: 4rem;
+      padding-block: 2rem;
+   }
+
+   main article button {
+      margin: 0px;
+   }
+
+   article button:hover {
+      border: 2px solid hsl(0, 0%, 41%);
+      background-color: inherit;
+   }
+
+   footer {
+      width: auto;
+   }
+
+ }
