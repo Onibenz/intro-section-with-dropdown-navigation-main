@@ -297,10 +297,7 @@ header {
    .mobile-image {
       display: none;
    }
-  picture {
-   height: 100%;
-   width: 100%;
-  } 
+
    .desktop-image {
      display: block;
      grid-column: 2/3;
