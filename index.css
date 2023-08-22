@@ -142,11 +142,11 @@ header {
     margin-left: 20px;  
  }
 
- .arrow-down {
+ .arrow-down, .company-down {
     display: block;
  }
 
- .arrow-up {
+ .arrow-up, .company-up {
     display: none;
  }
 
