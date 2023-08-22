@@ -123,6 +123,10 @@ header {
     cursor: pointer;
  }
 
+ nav details div {
+   margin-top: 0%;
+ }
+
  nav details summary {
     list-style: none;
     display: flex;
@@ -222,6 +226,11 @@ header {
     cursor: pointer;
  }
 
+ a {
+   text-decoration: none;
+   color: inherit;
+ }
+
  footer {
     /* border: 1px solid; */
     display: flex;
@@ -263,9 +272,9 @@ header {
       flex-direction: row;
       margin: 0%;
       gap: 30px;
-   }
+   } 
 
-   nav div {
+   .sign-up {
       /* border: 1px solid; */
       margin-top: 0px;
       display: flex;
@@ -279,7 +288,9 @@ header {
       border: 2px solid ;
    }
 
-   ul li span {
+   ul li div {
+      display: flex;
+      flex-direction: column;
       position: absolute;
       background-color: white;
       border-radius: 10px;
